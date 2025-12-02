@@ -1,0 +1,30 @@
+.one
+{
+    color: blue;
+    font-size: 20px;
+    background-color: yellow;
+}
+.two
+{
+    color: green;
+    font-size: 18px;
+    background-color: lightgray;
+}
+p{
+    font-family: Arial, sans-serif;
+    color: rgb(128, 0, 73);
+}
+#para {
+  text-align: center;
+  color: orange;
+  background-color: rgb(0, 0, 255);
+}
+p.cen {
+  
+  color: purple;
+}
+h3,h6,h5{
+    font-family: 'Courier New', Courier, monospace;
+    color: teal;
+    background-color: rgb(0, 195, 255,0.3);
+}
