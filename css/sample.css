@@ -49,6 +49,9 @@ h3,h6,h5{
     color: blue;
     padding: 10px 10px 10px 10px;
 }
+a{
+    cursor:pointer
+}
 a:link {
   color: rgb(0, 162, 255);
 }
