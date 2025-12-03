@@ -1,0 +1,36 @@
+.fr
+{
+    background-color: blanchedalmond;
+    border-radius: radius;
+    margin-left: 50px;
+    margin-right:50px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+tr:hover {
+    background-color: #e0f7ff;
+}
+
+data, meter {
+    font-weight: bold;
+    color: darkgreen;
+}

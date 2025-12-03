@@ -1,0 +1,134 @@
+.but{
+  background-color:rgb(255,0,0);
+  border-radius: 12px;
+  padding:5px 5px 5px 5px;
+  margin-left: 20px;
+  color:white;
+    border: none;
+    cursor: pointer;
+    height:36px;
+    width:105px;
+}
+.but:hover{
+  opacity:0.6;
+}
+.rectangle {
+  height: 100px;
+  width: 200px;
+  background-color:rgb(255, 255, 255);
+  border: solid black 2px;
+  margin-left: 20px;
+}
+.pos
+{
+  position:relative;
+  left: 70px;
+  bottom: 20px;
+}
+.po
+{
+  position:absolute;
+  right: 130px;
+  top: 50px;
+}
+.para
+{
+ position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
+.fix
+{
+   position: fixed;
+  top: 50px;
+  right: 100px;
+  width: 300px;
+  height: 300px;
+  
+
+}
+.b1
+{
+ position:relative;
+ height: 100px;
+  width: 200px;
+  background-color:rgb(0, 255, 255);
+  border: solid black 2px;
+  }
+.b2
+{
+ position:absolute;
+  height: 100px;
+  width: 200px;
+  background-color:rgb(255, 0, 255);
+  border: solid black 2px;
+  
+}
+.b3
+{
+ position:relative;
+  height: 100px;
+  width: 200px;
+  background-color:rgb(255, 255,0);
+  border: solid black 2px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+  padding: 2px;
+  justify-content: space-around;
+
+}
+
+.container div {
+  background-color: #f1f1f1;
+  
+  padding: 1px;
+  font-size: 24px;
+
+}
+.marquee-items {
+    display: inline-flex;   /* scrolling + flexbox */
+    gap: 60px;              /* <<< increase spacing here */
+}
+
+.marquee-items div img {           /* your size */
+    border-radius: 15px; 
+    padding: 20px;
+    gap:30px;  
+     /* optional */
+}
+
+/* Flexbox Basics Gallery */
+.gallery {
+    display: flex;               /* Make it flex */
+    flex-wrap: wrap;             /* Allow wrapping */
+    gap: 20px;                   /* Space between items */
+    justify-content: center;     /* Center items */
+    padding: 20px;
+    background: #f3f3f3;
+}
+
+.item {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;  /* smooth zoom */
+}
+.item img:hover,
+.item img:active {
+    transform: scale(1.05);
+}
+
