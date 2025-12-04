@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Info UI</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h1>Student Information</h1>
+
+    <button onclick="showNames()">Show All Names</button>
+    <button onclick="showAge()">Show Age greater than 18</button>
+
+    <div class="search-box">
+        <input type="text" id="nameInput" placeholder="Enter name to get marks">
+        <button onclick="searchMark()">Get Mark</button>
+    </div>
+
+    <button onclick="countStudents()">Count Total Students</button>
+    <button onclick="topMark()">Top Mark </button>
+
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
