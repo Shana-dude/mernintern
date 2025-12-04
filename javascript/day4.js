@@ -352,27 +352,100 @@
 
 // console.log(result);
 
-const arr = [1, 2, 3, 4, 5, 6];
-const sum = arr
-  .filter(n => n % 2 === 0)  // pick even numbers
-  .map(n => n * 2)           // double them
-  .reduce((a, b) => a + b);  // add all
-console.log(sum);
+// const arr = [1, 2, 3, 4, 5, 6];
+// const sum = arr
+//   .filter(n => n % 2 === 0)  // pick even numbers
+//   .map(n => n * 2)           // double them
+//   .reduce((a, b) => a + b);  // add all
+// console.log(sum);
 
-const person = {
-  name: "Rakshna",
-  age: 18,
-  greet() {
-    console.log("Hello " + this.name + ", Age: " + this.age);
-    return this;   // <-- return object for chaining
-  },
-  setAge(a) {
-    this.age = a;
-    return this;
-  }
-};
-person
-  .greet()
-  .setAge(19)
-  .greet();
-console.log("Age: " + person.age);
+// const person = {
+//   name: "Rakshna",
+//   age: 18,
+//   greet() {
+//     console.log("Hello " + this.name + ", Age: " + this.age);
+//     return this;   // <-- return object for chaining
+//   },
+//   setAge(a) {
+//     this.age = a;
+//     return this;
+//   }
+// };
+// person
+//   .greet()
+//   .setAge(19)
+//   .greet();
+// console.log("Age: " + person.age);
+
+//Loops: FOR IN
+// const person = { name: "Rakshna", age: 18, grade: "A" };
+// for (let key in person) {
+//   console.log(key, ":", person[key]);
+// }
+// const fruits = ["apple", "mango", "banana"];
+
+// for (let index in fruits) {
+//   console.log(" "+index, fruits[index]);
+// }
+
+// //LOOPS: FOR OF
+// const fruits1 = ["apple", "mango", "banana"];
+// for (let fruit of fruits1) {
+//   console.log(fruit);
+// }
+// for (let ch of "RAKSHNA") {
+//   console.log(ch);
+// }
+
+//LOOPS:FOR EACH
+// const colors = ["red", "green", "blue"];
+// colors.forEach((color, index) => {
+//   console.log(index, color);
+// });
+
+// const numbers = [10, 20, 30, 40, 50];   
+// numbers.forEach(num => {
+//   console.log(num);
+// }
+// );
+
+//LOOPS:WHILE
+// let i = 1;
+// let sum = 0;
+// while (i <= 5) {
+//   sum += i;
+//   i++;
+// }
+// console.log("Total:", sum);  // 15
+// const prompt = require("prompt-sync")();
+// let password = "";
+// while (password !== "1234") {
+//   password = prompt("Enter password:");
+// }
+// console.log("Access Granted!");
+
+//reduce method accumulator currentValue initial value 
+// const nums = [1, 2, 3, 4, 5];
+// const total = nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log(total); // 15
+
+// const arr = [10, 5, 40, 30];
+// const max = arr.reduce((acc, num) => 
+//   num > acc ? num : acc
+// , arr[0]);
+// console.log(max);  // 40
+
+const arr1= [1, 2, 3, 4];
+const arr2= [5, 6, 7, 8];
+// const combined= arr1.concat(arr2);
+// console.log(combined);//[1,2,3,4,5,6,7,8]
+
+// const spreadCombined= [...arr1, ...arr2];
+// console.log(spreadCombined);//[1,2,3,4,5,6,7,8]
+
+const a = [1, 2, 3, 4, 5];
+const b = [4, 5, 6, 7, 8];
+const merged = [...a, ...b];
+console.log(merged);//[1,2,3,4,5,4,5,6,7,8]
+const result = [...new Set([...a, ...b])];
+console.log(result);
