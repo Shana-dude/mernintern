@@ -8,7 +8,7 @@ export const products = [
   },
   {
     _id: "2",
-    name: "Mobile",
+    name: "Mobiles",
     price: 25000,
     image: "https://picsum.photos/200",
     description: "Latest smartphone"
